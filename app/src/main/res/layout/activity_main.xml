@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/doWorkoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onButtonClick"
+        android:text="Realizuj trening" />
+
+    <Button
+        android:id="@+id/planButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/doWorkoutButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/doWorkoutButton"
+        android:onClick="onButtonClick"
+        android:text="Plan treningowy" />
+
+    <Button
+        android:id="@+id/exercisesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/planButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/planButton"
+        android:onClick="onButtonClick"
+        android:text="Ćwiczenia" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/exercisesButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exercisesButton"
+        android:onClick="onButtonClick"
+        android:text="Historia" />
+
+    <Button
+        android:id="@+id/calculatorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Kalkulator BMI"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/historyButton"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

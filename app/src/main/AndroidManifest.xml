@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.edu.zut.wi.pgozdziewski.mangym">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExercisesActivity"
+            android:label="@string/title_activity_exercises"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.zut.wi.pgozdziewski.mangym.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExerciseCreationActivity"
+            android:label="@string/title_activity_exercise_creation"
+            android:parentActivityName=".ExercisesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.zut.wi.pgozdziewski.mangym.ExercisesActivity" />
+        </activity>
+        <activity
+            android:name=".WorkoutPlanActivity"
+            android:label="@string/title_activity_workout_plan"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.zut.wi.pgozdziewski.mangym.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WorkoutPlanCreationActivity"
+            android:label="@string/title_activity_workout_plan_creation"
+            android:parentActivityName=".WorkoutPlanActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.zut.wi.pgozdziewski.mangym.WorkoutPlanActivity" />
+        </activity>
+        <activity
+            android:name=".DoWorkoutActivity"
+            android:label="@string/title_activity_do_workout"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.zut.wi.pgozdziewski.mangym.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.zut.wi.pgozdziewski.mangym.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HistoryMainScreenActivity"
+            android:label="@string/title_activity_history"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.edu.zut.wi.pgozdziewski.mangym.MainActivity" />
+        </activity>
+        <activity android:name=".CalculatorActivity"
+            android:label="@string/activity_calculator"
+            android:parentActivityName=".MainActivity"/>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="pl.edu.zut.wi.pgozdziewski.mangym.MainActivity" />
+        <activity
+            android:name=".GraphActivity"
+            android:label="@string/title_activity_history_graps">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="pl.edu.zut.wi.pgozdziewski.mangym.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
